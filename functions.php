@@ -22,7 +22,9 @@ if (isset($_POST['email'])) {
         $alert = "alert-danger";
     } else {
         $message = "Indirizzo email valido";
-        $alert = "alert-success";
+        //$alert = "alert-success";
+        header("Location: thankyou.php"); 
+        die;  
         
     }
 }
