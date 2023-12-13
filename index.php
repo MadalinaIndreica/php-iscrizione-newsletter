@@ -20,7 +20,7 @@ include_once __DIR__ . "/functions.php"
             <div class="mb-2">
                 <label for="email">Inserisci la tua mail</label>
                 <input type="text" id="email" name="email" value="<?php echo $useremail; ?>" placeholder="user@email.com">
-                <p><?php echo $message ?></p>
+                <p class=" mt-4 alert <?php echo $alert; ?>"><?php echo $message ?></p>
             </div>
             <button class="btn btn-primary" type="submit">Invia</button>
         </form>
