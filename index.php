@@ -1,3 +1,7 @@
+<?php 
+include_once __DIR__ . "/functions.php"
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,11 +15,12 @@
 
 <body>
     <div class="container mt-5 text-center">
-        <h1 class=" mt-5 mb-5">Iscriviti alla nostra newsletter!</h1>
+        <h1 class=" mt-5 mb-5">Iscriviti alla nostra newsletter</h1>
         <form method="post" action="index.php">
             <div class="mb-2">
                 <label for="email">Inserisci la tua mail</label>
-                <input type="text" id="email" name="email" value="" placeholder="user@email.com">
+                <input type="text" id="email" name="email" value="<?php echo $useremail; ?>" placeholder="user@email.com">
+                <p><?php echo $message ?></p>
             </div>
             <button class="btn btn-primary" type="submit">Invia</button>
         </form>
